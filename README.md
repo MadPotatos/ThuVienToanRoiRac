@@ -1,4 +1,4 @@
-# toanroiractantanh
+# toanroiractantanh Tác giả thành viên nhóm Việt, Dũng , Việt Anh
 Hello!!!Xin chào các bạn. Đây là thư viện chạy các thuật toán trong môn toán rời rạc.
 Được chia làm 3 thư viện nhỏ;
 
@@ -21,7 +21,7 @@ Hello!!!Xin chào các bạn. Đây là thư viện chạy các thuật toán tr
     dagtopo.h: Kiểm tra đồ thị có phi chu trình không(DAG) và in ra sắp xếp Topologicalsor.
     dijkbell.h: Tìm đường đi ngắn nhất bằng thuật toán dijkstra và bellman.Xuất ra file đồ thị dijkstra.dot
 
-Tác giả Việt, Dũng , Việt Anh
+
                
               
                
