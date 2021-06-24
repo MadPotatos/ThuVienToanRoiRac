@@ -10,33 +10,36 @@ int DAG(Graph graph)
   int visited[1000];
   int n, output[100], i, u, v, start;
   Dllist node, stack;
-  JRB vertex;
+  JRB tmp;
 
-  jrb_traverse(vertex, graph.vertices)
+  jrb_traverse(tmp, graph.vertices)
   {
     memset(visited, 0, sizeof(visited));
 
-    start = jval_i(vertex->key);
+    start = tmp->key.i;
     stack = new_dllist();
     dll_append(stack, new_jval_i(start));
-
+    //printf("+%d\n",start);
     while (!dll_empty(stack))
     {
       node = dll_last(stack);
       u = jval_i(node->val);
       dll_delete_node(node);
+      //printf("-%d\n");
       if (!visited[u])
       {
         visited[u] = 1;
         n = outdegree(graph, u, output);
         for (i = 0; i < n; i++)
-        {
+        { 
           v = output[i];
-          if (v == start) // cycle detected
+          //printf("%d ",v);          
+          if (v == start) 
             return 0;
           if (!visited[v])
             dll_append(stack, new_jval_i(v));
         }
+        //printf("\n");
       }
     }
   }

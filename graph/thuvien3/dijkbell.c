@@ -180,10 +180,12 @@ void print_dijkstra(Graph g, int s, int t)
 {
   int i, length, path[10000];
   int w;
+  length =0;
   w = (int)dijkstra(g, s, t, path, &length);
   if (w == INFINITIVE_VALUE)
   {
     printf("Khong co duong di tu %s den %s\n", getVertex(g, s), getVertex(g, t));
+    graphiz_dijkstra(g,path,length,"dijkstra.dot");
   }
   else
   {
@@ -242,7 +244,6 @@ double shortestPath_version_BellMan(Graph g, int s, int t, int* path, int* lengt
             v = output[i];
             w = getEdgeValue(g, u, v);
             if ( dist[v] > dist[u] + w ) {    
-               printf("Do thi co chu trinh am\n");
                return -1;
             }
          }
@@ -258,14 +259,19 @@ double shortestPath_version_BellMan(Graph g, int s, int t, int* path, int* lengt
 void print_bellman(Graph g, int s, int t)
 {
   int i, length, path[10000];
+  length =0;
   int w;
   w = (int)shortestPath_version_BellMan(g, s, t, path, &length);
   if(w ==-1){
-    printf("Do thi co chu trinh am\n");
+    length =0;
+    printf("Canh bao do thi co chu trinh am\n");
+    graphiz_dijkstra(g, path, length, "bellman.dot");
+
   }
   else if (w == INFINITIVE_VALUE)
   {
     printf("Khong co duong di tu %s den %s\n", getVertex(g, s), getVertex(g, t));
+    graphiz_dijkstra(g, path, length, "bellman.dot");
   }
   else
   {
@@ -274,6 +280,8 @@ void print_bellman(Graph g, int s, int t)
       printf(" => %s", getVertex(g, path[i]));
     //printf(" => %s %s", getVertex(g, path[i]),getVertex(g, path[i+1]));
     graphiz_dijkstra(g, path, length, "bellman.dot");
-      printf("\nDa xuat ra file bellman.dot\n");
+     
   }
+   printf("\nDa xuat ra file bellman.dot\n");
 }
+

@@ -7,4 +7,3 @@ void graphiz_dij(Graph g, int *path,int length);
 double shortestPath_version_BellMan(Graph g, int s, int t, int *path, int *length);
 void print_bellman(Graph g, int s, int t);
 //
-
