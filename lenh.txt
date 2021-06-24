@@ -1,0 +1,24 @@
+tv1 
+gcc -c coloring.c prufercode.c main.c
+gcc -o main  coloring.c prufercode.c main.c
+./main
+
+
+tv2
+gcc -c graph.c jrb.c jval.c dllist.c 
+dfsbfs.c krukal.c prim.c main.c
+
+gcc -o main  graph.c jrb.c jval.c dllist.c dfsbfs.c krukal.c prim.c main.c
+./main
+dot -Tpdf mst.dot -o  graph1.pdf
+dot -Tpdf graph_vh.dot -o  graph2.pdf
+dot -Tpdf graph_ch.dot -o  graph3.pdf
+
+
+tv3
+gcc -c main.c jrb.c jval.c dllist.c graph.c dagtopo.c dijkbell.c
+gcc -o main  main.c jrb.c jval.c dllist.c graph.c dagtopo.c dijkbell.c
+
+./main
+dot -Tpdf dijkstra.dot -o  graph.pdf
+dot -Tpdf graph_ch.dot -o  graph1.pdf

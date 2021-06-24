@@ -1,0 +1,12 @@
+digraph{
+A [fillcolor=white, style=filled];
+B [fillcolor=white, style=filled];
+C [fillcolor=white, style=filled];
+D [fillcolor=white, style=filled];
+E [fillcolor=white, style=filled];
+A -> B [weight = 1] [label = 1];
+B -> C [weight = 1] [label = 1];
+C -> A [weight = 1] [label = 1];
+D -> E [weight = 1] [label = 1];
+E -> D [weight = 1] [label = 1];
+}
