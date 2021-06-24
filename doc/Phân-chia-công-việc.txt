@@ -1,0 +1,3 @@
+Việt : coloring , duyệt bfs dfs, DAG,TOP ,Dijkstra,tạo graphiz
+Dũng : prufercode, tìm liên thông mạnh,tìm cây bao trùm kruval, tổng hợp lại thư viện tạo graphiz
+Việt Anh: fathercode, tìm thành phần liên thông, bellman ,tìm cây bao trùm prim tạo graphiz
