@@ -1,5 +1,4 @@
-# Tác giả Việt, Dũng , Việt Anh
-# toanroiractantanh
+toanroiractantanh
 # Hello!!!Xin chào các bạn. Đây là thư viện chạy các thuật toán trong môn toán rời rạc.
 # Được chia làm 3 thư viện nhỏ;
 # Thư viện 1: coloring.h ,prufercode.h:
@@ -19,7 +18,7 @@
                graph.h:Giống thư viện 2.
                dagtopo.h: Kiểm tra đồ thị có phi chu trình không(DAG) và in ra sắp xếp Topologicalsor.
                dijkbell.h: Tìm đường đi ngắn nhất bằng thuật toán dijkstra và bellman.Xuất ra file đồ thị dijkstra.dot
-
-                
+# Tác giả Việt, Dũng , Việt Anh
+               
               
                
