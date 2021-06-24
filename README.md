@@ -6,7 +6,7 @@ Thư viện 1: coloring.h ,prufercode.h:
   coloring.h: tô màu đồ thị, đọc file color.txt, xuất ra file color.dot
   prufercode.h: nén cây, đọc từ file prufer.txt, hiện thị mã prufer, father ra chương trình
 Thư viện 2: graph.h dfsbfs.h krukal.h,prim.h đọc dữ liệu từ file graph.txt
-  graph.h: Tạo đồ thị bằng thư viện JRB jval.c dllist.c jrb.c 
+  -graph.h: Tạo đồ thị bằng thư viện JRB jval.c dllist.c jrb.c 
   link thu vien JRB: http://web.eecs.utk.edu/~huangj/cs360/360/notes/Libfdr/?fbclid=IwAR0CTeIMbt_b_RSs9Wfn4h7L91IeSSr-YvEI6v2XmDMEIzfhH6ybtWC8mPc
   hàm tìm thành phần liên thông đồ thị vô hướng lienthongdothivohuong(g)
   hàm tìm thành phần liên thông đồ thị có hướng lienthongmanh(g)
