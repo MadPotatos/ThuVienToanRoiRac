@@ -1,4 +1,4 @@
-# toanroiractantanh Tác giả thành viên nhóm Việt, Dũng , Việt Anh
+# toanroiractantanh thành viên nhóm Việt, Dũng , Việt Anh
 Hello!!!Xin chào các bạn. Đây là thư viện chạy các thuật toán trong môn toán rời rạc.
 Được chia làm 3 thư viện nhỏ;
 
