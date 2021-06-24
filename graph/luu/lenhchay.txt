@@ -1,0 +1,4 @@
+ gcc -c test.c jrb.c jval.c dllist.c dijkbell.c dfsbfs.c dagtopo.c prufercode.c mst.c graph.c
+
+ gcc -o test test.c jrb.c jval.c dllist.c dijkbell.c dfsbfs.c dagtopo.c prufercode.c mst.c graph.c
+ ./test
