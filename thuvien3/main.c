@@ -30,6 +30,7 @@ void docfile(Graph g, char *filename){
     fclose(fp);
 }
 
+
 void  dagtopol(){
     int n,i,output[10000];
     Graph g =createGraph();

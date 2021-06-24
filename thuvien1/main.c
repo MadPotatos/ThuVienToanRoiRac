@@ -9,10 +9,9 @@
 int main(){
     printf("Prufercode: ");
     pruffercode();
-    printf("\nPrufercode: ");
+    printf("Fathercode: ");
     fathercode();
     printf("\nTo mau do thi: \n");
-    coloring_graph("prufer.txt");
-    
+    coloring_graph("color.txt");
     return 0;
 }

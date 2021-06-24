@@ -1,0 +1,17 @@
+graph{
+A [fillcolor=red, style=filled, style = bold, color=red ,fontcolor=red];
+B [fillcolor=red, style=filled, style = bold, color=red ,fontcolor=red];
+C [fillcolor=red, style=filled, style = bold, color=red ,fontcolor=red];
+D [fillcolor=red, style=filled, style = bold, color=red ,fontcolor=red];
+E [fillcolor=red, style=filled, style = bold, color=red ,fontcolor=red];
+F [fillcolor=red, style=filled, style = bold, color=red ,fontcolor=red];
+A -- B [weight = 2,label = 2, style = bold, color=red];
+A -- C [weight = 1,label = 1, style = bold, color=red];
+B -- C [weight = 2,label = 2];
+B -- D [weight = 1,label = 1, style = bold, color=red];
+C -- D [weight = 2,label = 2];
+C -- E [weight = 3,label = 3];
+D -- E [weight = 3,label = 3, style = bold, color=red];
+D -- F [weight = 4,label = 4];
+E -- F [weight = 1,label = 1, style = bold, color=red];
+}
